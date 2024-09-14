@@ -3,79 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>IPM - Group 14</title>
+    <title>IPM - G14</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
             background-color: #4CAF50;
+            padding: 10px;
             color: white;
-            padding: 10px 0;
             text-align: center;
         }
-        section {
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
             padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
+        .team {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 5px 0;
+        .team-member {
+            width: 22%;
+            text-align: center;
+            border: 1px solid #ddd;
             padding: 10px;
-            background-color: #e7e7e7;
-            border-radius: 5px;
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .team-member h3, .team-member p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Interação Pessoa Máquina 24/25 - Group 14</h1>
+    <h1>Interação Pessoa-Máquina 24/25: Group 14</h1>
 </header>
 
-<section>
-    <h2>Untitled Cooking App</h2>
-    <p><strong>Project Name:</strong> Untitled Cooking App</p>
-    <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-</section>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="member1.html">Henrique's Assignments</a>
+    <a href="member2.html">João's Assignments</a>
+    <a href="member3.html">Miguel's Assignments</a>
+    <a href="member4.html">Daniel's Assignments</a>
+</nav>
 
-<section>
-    <h2>Team Members</h2>
-    <ul>
-        <li><strong>Member 1:</strong> Henrique Oliveira, 70242</li>
-        <li><strong>Member 2:</strong> João Custódio, number</li>
-        <li><strong>Member 3:</strong> Miguel Fontes, 55119</li>
-        <li><strong>Member 4:</strong> Daniel Pojega, 71991</li>
-        <!-- Add more members as needed -->
-    </ul>
-</section>
+<div class="container">
+    <section>
+        <h2>Untitled Cooking App</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </section>
 
-<section>
-    <h2>Project Links</h2>
-    <ul>
-        <li><a href="https://link-to-documentation.com">Documentation</a></li>
-        <li><a href="https://link-to-github-repo.com">GitHub Repository</a></li>
-        <li><a href="https://link-to-other-resource.com">Additional Resources</a></li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contact Information</h2>
-    <p>If you have any questions, please reach out to the project leader at <a href="mailto:email@example.com">email@example.com</a>.</p>
-</section>
+    <section>
+        <h2>Team Members</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="member1.jpg" alt="Member 1 Photo">
+                <h3>Henrique Oliveira</h3>
+                <p>70242</p>
+            </div>
+            <div class="team-member">
+                <img src="member2.jpg" alt="Member 2 Photo">
+                <h3>João Custódio</h3>
+                <p>Number</p>
+            </div>
+            <div class="team-member">
+                <img src="member3.jpg" alt="Member 3 Photo">
+                <h3>Miguel Fontes</h3>
+                <p>55119</p>
+            </div>
+            <div class="team-member">
+                <img src="member4.jpg" alt="Member 4 Photo">
+                <h3>Daniel Pojega</h3>
+                <p>71991</p>
+            </div>
+        </div>
+    </section>
+</div>
 
 </body>
 </html>
