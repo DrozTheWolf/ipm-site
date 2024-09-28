@@ -3,85 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon (tab icon) -->
     <link rel="icon" type="image/png" href="EasyDishLogoTRANS.png">
-    <title>IPM - G14</title>
+    <title>EasyDish - Your Cooking Companion</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: url('kitchen_background.jpg') no-repeat center center fixed; /* Add your kitchen image here */
+            background-size: cover;
+            color: #333;
         }
         header {
-            background-color: #4CAF50;
-            padding: 10px;
-            color: white;
+            background: rgba(155, 155, 155, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            color: #333;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
         nav {
-            background-color: #333;
+            background-color: rgba(235, 235, 235, 0.8); /* Semi-transparent white */
             overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
         nav a {
             float: left;
             display: block;
-            color: white;
+            color: #333; /* Dark text for contrast */
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: rgba(156, 156, 156, 0.7); /* Light gray on hover */
+            color: #333;
         }
         nav a.active {
-            background-color: #3d8c40; /* Active tab background */
-            color: white;
+            background-color: rgba(173, 173, 173, 0.9); /* Active tab */
+            color: #333;
             font-weight: bold;
-            border-bottom: 3px solid rgb(8, 44, 201); /* Bottom border for indication */
         }
         .container {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(199, 199, 199, 0.9); /* Slightly more opaque for readability */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
         .app-title {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
+            margin-bottom: 20px;
         }
         .app-title img {
-            width: 30px; /* Smaller size for app logo */
-            height: 30px;
+            width: 80px;
+            height: 80px;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
         }
         .team {
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
+            flex-wrap: wrap;
         }
         .team-member {
             width: 22%;
             text-align: center;
-            border: 1px solid #ddd;
-            padding: 10px;
+            border-radius: 12px;
+            padding: 15px;
+            background: rgba(228, 228, 228, 0.8); /* Semi-transparent for team members */
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
         .team-member img {
-            width: 100%;
-            height: auto;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
+            margin-bottom: 10px;
         }
         .team-member h3, .team-member p {
             margin: 10px 0;
         }
         .assignment-btn {
-            background-color: #4CAF50;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent */
             color: white;
-            padding: 10px 20px;
+            padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
+            transition: background 0.3s, transform 0.3s;
         }
         .assignment-btn:hover {
-            background-color: #45a049;
+            background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -97,38 +124,40 @@
 </nav>
 
 <div class="container">
+    <section class="app-title">
+        <img src="EasyDishLogoTRANS.png" alt="App Logo"> 
+        <h2>Discover EasyDish - Your New Cooking Companion</h2>
+    </section>
     <section>
-        <img src="EasyDishLogoTRANS.png" alt="App Logo" width="100" height="100"> 
-        <h2>EasyDish</h2>
-        <p>Discover a world of delicious recipes with our easy-to-use cooking app! Whether you're a professional chef or just getting started in the kitchen, our app offers a vast collection of user-submitted and chef-verified recipes to suit all tastes and skill levels. Easily filter recipes by tags like vegan, gluten-free, and more. Save your favorites, set cooking timers, and explore new culinary possibilities—no matter your experience. Your next great meal is just a tap away!</p>
+        <p>Discover a world of delicious recipes with our easy-to-use cooking app! Whether you're a professional chef or just getting started in the kitchen, our app offers a vast collection of user-submitted and chef-verified recipes to suit all tastes and skill levels. Easily filter recipes by tags like vegan, gluten-free, and more. Save your favorites, set cooking timers, and explore new culinary possibilities—your next great meal is just a tap away!</p>
     </section>
 
     <section>
-        <h2>Team Members</h2>
+        <h2>Meet the Team</h2>
         <div class="team">
             <div class="team-member">
-                <img src="member1.png" alt="Member 1 Photo">
+                <img src="member1.png" alt="Henrique Oliveira">
                 <h3>Henrique Oliveira</h3>
                 <p>70242</p>
-                <a href="https://drozthewolf.github.io/ipm-site/member1" class="assignment-btn">Henrique's Assignments</a>
+                <a href="https://drozthewolf.github.io/ipm-site/member1" class="assignment-btn">Assignments</a>
             </div>
             <div class="team-member">
-                <img src="member2.png" alt="Member 2 Photo">
+                <img src="member2.png" alt="João Custódio">
                 <h3>João Custódio</h3>
                 <p>71736</p>
-                <a href="https://drozthewolf.github.io/ipm-site/member2" class="assignment-btn">João's Assignments</a>
+                <a href="https://drozthewolf.github.io/ipm-site/member2" class="assignment-btn">Assignments</a>
             </div>
             <div class="team-member">
-                <img src="member3.png" alt="Member 3 Photo">
+                <img src="member3.png" alt="Miguel Fontes">
                 <h3>Miguel Fontes</h3>
                 <p>55119</p>
-                <a href="https://drozthewolf.github.io/ipm-site/member3" class="assignment-btn">Miguel's Assignments</a>
+                <a href="https://drozthewolf.github.io/ipm-site/member3" class="assignment-btn">Assignments</a>
             </div>
             <div class="team-member">
-                <img src="member4.png" alt="Member 4 Photo">
+                <img src="member4.png" alt="Daniel Pojega">
                 <h3>Daniel Pojega</h3>
                 <p>71991</p>
-                <a href="https://drozthewolf.github.io/ipm-site/member4" class="assignment-btn">Daniel's Assignments</a>
+                <a href="https://drozthewolf.github.io/ipm-site/member4" class="assignment-btn">Assignments</a>
             </div>
         </div>
     </section>
